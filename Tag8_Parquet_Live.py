@@ -45,6 +45,9 @@ import os
 import sys
 import time
 
+# HADOOP FIX FOR WINDOWS (winutils.exe)
+os.environ['HADOOP_HOME'] = r'C:\hadoop'
+
 # Java 17 Pfad setzen (Windows)
 # ZEIGEN: "Diese Zeile sagt Python wo Java ist.
 #          Ohne Java funktioniert Spark nicht."
